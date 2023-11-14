@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "cdbdf356-9896-4b27-bfe0-a6a5ded11991",
+		"name": "GUITAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31025247"
+	},
+	"item": [
+		{
+			"name": "Guitar Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/guitars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"guitars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Guitar|POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/guitars?name=unknown&price=9000&description=N/A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"guitars"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "unknown"
+						},
+						{
+							"key": "price",
+							"value": "9000"
+						},
+						{
+							"key": "description",
+							"value": "N/A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Guitar|PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/guitars/19/update?name=joe&price=9000&description=hi, hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"guitars",
+						"19",
+						"update"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "joe"
+						},
+						{
+							"key": "price",
+							"value": "9000"
+						},
+						{
+							"key": "description",
+							"value": "hi, hello"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Guitar|Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/guitars/19/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"guitars",
+						"19",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
