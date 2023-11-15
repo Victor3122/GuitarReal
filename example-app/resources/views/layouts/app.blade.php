@@ -15,21 +15,26 @@
 
 <style>
     body {
-      font-family: "Sofia", sans-serif;
-      font-size: 30px;
-      text-shadow: 3px 3px 3px #e4de27;
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        text-shadow: 3px 3px 3px #e4de27;
     }
+    
     .guitar-store {
-     background-color: bg-blue-500;
-     color: text-white;
+        background-image: url('{{URL("storage/5.jpg")}}');
+        background-size: cover;
+        background-position: center;
+        color: white;
     }
+    
     button {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+</style>
     </style>
 <body>
     <body class=" h-screen flex flex-col">

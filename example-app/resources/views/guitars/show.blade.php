@@ -13,22 +13,21 @@
 </head>
 <style>
     body {
-      font-family: "Sofia", sans-serif;
-      font-size: 30px;
-      text-shadow: 3px 3px 3px #e4de27;
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        text-shadow: 3px 3px 3px #e4de27;
     }
-    .guitar-store {
-     background-color: bg-blue-500;
-     color: text-white;
-    }
+    
+
+    
     button {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-    </style>
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+</style>
 <body>
     <body class=" h-screen flex flex-col">
 
@@ -46,12 +45,14 @@
                   </button> </a>
                   
             </div>
+           
         </div>
+        <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('{{URL("storage/10.jpg")}}'); background-size: cover; background-position: center;">
         @if(session('status'))
             <div class="alert alert-info">{{session('status')}}</div>
         @endif
         
-        <div class="flex w-full overflow-x-auto">
+        <div class="flex w-full overflow-x-auto text-red-600">
             <table class="table">
                 <thead>
                     <tr>
@@ -83,5 +84,6 @@
                 </tbody>
             </table>
         </div>
+</div>
     </body>
 </html>
